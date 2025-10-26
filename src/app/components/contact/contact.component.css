@@ -1,0 +1,34 @@
+.continerimage {
+  width: 250px;
+  margin: auto;
+}
+.homestar > div {
+  height: 3px;
+  width: 70px;
+  background-color: rgb(43, 61, 79);
+}
+.home {
+  padding-top: 150px !important;
+}
+.color {
+  color: rgb(43, 61, 79);
+}
+.input_contact:focus {
+  outline: none;
+}
+.input_contact {
+  padding: 5px;
+  border: 0;
+  box-shadow: 0px 1px 3px rgb(63, 55, 55);
+}
+.submit{
+    background-color: rgb(26, 189, 156);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: 900;
+}
+.submit:hover{
+    background-color: rgb(27, 139, 116);
+}

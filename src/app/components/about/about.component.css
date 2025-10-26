@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+}
+.continerimage{
+    width: 250px;
+    margin: auto;
+}
+.homestar >div{
+    height: 3px;
+    width: 70px;
+    background-color: #fff;
+}
+.home{
+    background-color: rgb(26, 189, 156);
+    padding-top: 150px !important;
+}

@@ -1,0 +1,81 @@
+<div class="home m-0 py-3">
+  <h2 class="text-center text-uppercase fw-bold color fs-1">portfolio component</h2>
+  <div class="homestar d-flex gap-3 align-items-center justify-content-center py-3">
+    <div></div>
+    <i class="color fa-solid fa-star"></i>
+    <div></div>
+  </div>
+  <div (click)="viowimagee($event)" class="container row m-auto justify-content-between">
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port1.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="1" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port2.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="2" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port3.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="3" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port3.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="3" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port2.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="2" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
+      <div class="view p-0 position-relative overflow-hidden">
+        <img src="/img/port1.png" alt="" />
+        <div
+          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
+        >
+          <img test="1" src="/img/add.apng" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="hiddenviowimage()" [class.d-none]="viowimage" class="viowImage position-fixed z-3 top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center">
+    <div class="w-50">
+      <img [src]="srcimageviow" alt="">
+    </div>
+  </div>
+</div>

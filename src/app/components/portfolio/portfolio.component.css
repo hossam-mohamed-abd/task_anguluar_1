@@ -1,0 +1,35 @@
+.continerimage {
+  width: 250px;
+  margin: auto;
+}
+.homestar > div {
+  height: 3px;
+  width: 70px;
+  background-color: rgb(43, 61, 79);
+}
+.home {
+  padding-top: 150px !important;
+}
+.color {
+  color: rgb(43, 61, 79);
+}
+img{
+  width: 100%;
+}
+.imageadd{
+  background-color: rgba(89, 211, 171, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.imageadd img{
+  width: 50%;
+}
+.imageadd{
+  transition: 200ms;
+}
+.view:hover .imageadd{
+  top: 0 !important;
+}
+.viowImage{
+  background-color: rgba(0, 0, 0, 0.8);
+}
