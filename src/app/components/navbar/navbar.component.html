@@ -1,8 +1,10 @@
-<nav [class.py-4]="scroll"  class="navbar navbar-expand-lg text-white position-fixed start-0 end-0 fs-4">
-  <div class="container">
-    <a class="navbar-brand fs-1 fw-bold text-white" href="#">Start Framework</a>
+<nav [class.py-4]="scroll" class="fixed start-0 end-0 text-white text-xl bg-[#2B3D4F] font-sans transition-all duration-[1000ms] z-20">
+  <div class="container mx-auto px-4 flex items-center justify-between py-4">
+
+    <a class="text-white text-3xl font-bold" href="#">Start Framework</a>
+
     <button
-      class="navbar-toggler"
+      class="text-white block lg:hidden"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -10,26 +12,30 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="block w-8 h-1 bg-white mb-1"></span>
+      <span class="block w-8 h-1 bg-white mb-1"></span>
+      <span class="block w-8 h-1 bg-white"></span>
     </button>
-    <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+
+    <div class="text-center w-full hidden lg:flex lg:w-auto lg:justify-end" id="navbarSupportedContent">
+      <ul class="ms-auto flex flex-col lg:flex-row gap-4 lg:gap-6">
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page"  routerLinkActive="bg-success rounded-3" routerLink="Home">Home</a>
+          <a class="text-white px-3 py-2 block" aria-current="page" routerLinkActive="bg-green-600 rounded-3" routerLink="Home">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" routerLinkActive="bg-success rounded-3" routerLink="about">about</a>
+          <a class="text-white px-3 py-2 block" aria-current="page" routerLinkActive="bg-green-600 rounded-3" routerLink="about">about</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" routerLinkActive="bg-success rounded-3" routerLink="portfolio">portfolio</a>
+          <a class="text-white px-3 py-2 block" aria-current="page" routerLinkActive="bg-green-600 rounded-3" routerLink="portfolio">portfolio</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" routerLinkActive="bg-success rounded-3" routerLink="contact">contact</a>
+          <a class="text-white px-3 py-2 block" aria-current="page" routerLinkActive="bg-green-600 rounded-3" routerLink="contact">contact</a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>

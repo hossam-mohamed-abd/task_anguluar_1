@@ -1,81 +1,80 @@
-<div class="home m-0 py-3">
-  <h2 class="text-center text-uppercase fw-bold color fs-1">portfolio component</h2>
-  <div class="homestar d-flex gap-3 align-items-center justify-content-center py-3">
-    <div></div>
-    <i class="color fa-solid fa-star"></i>
-    <div></div>
-  </div>
-  <div (click)="viowimagee($event)" class="container row m-auto justify-content-between">
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port1.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="1" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
+<div class="home m-0 pb-3 pt-[150px]">
+  <h2 class="text-center uppercase font-bold text-4xl text-[#2B3D4F]">
+    portfolio component
+  </h2>
 
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port2.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="2" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port3.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="3" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port3.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="3" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port2.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="2" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="p-3 col-sm-12 col-md-6 col-lg-4">
-      <div class="view p-0 position-relative overflow-hidden">
-        <img src="/img/port1.png" alt="" />
-        <div
-          class="imageadd d-flex align-items-center justify-content-center position-absolute top-100"
-        >
-          <img test="1" src="/img/add.apng" alt="" />
-        </div>
-      </div>
-    </div>
+  <div class="homestar flex gap-3 items-center justify-center py-3">
+    <div class="w-[70px] h-[3px] bg-[#2B3D4F]"></div>
+    <i class="fa-solid fa-star text-[#2B3D4F]"></i>
+    <div class="w-[70px] h-[3px] bg-[#2B3D4F]"></div>
   </div>
 
-  <div (click)="hiddenviowimage()" [class.d-none]="viowimage" class="viowImage position-fixed z-3 top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center">
-    <div class="w-50">
-      <img [src]="srcimageviow" alt="">
+  <div (click)="viowimagee($event)" class="mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port1.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="1" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port2.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="2" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port3.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="3" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port3.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="3" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port2.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="2" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="view relative overflow-hidden p-0 group">
+        <img src="/img/port1.png" alt="" class="w-full" />
+        <div class="absolute top-full left-0 flex items-center justify-center w-full h-full bg-[rgba(89,211,171,0.6)] transition-all duration-200 group-hover:top-0">
+          <img test="1" src="/img/add.apng" alt="" class="w-1/2" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div 
+    (click)="hiddenviowimage()"
+    [class.hidden]="viowimage"
+    class="fixed inset-0 z-30 flex items-center justify-center bg-[rgba(0,0,0,0.8)]"
+  >
+    <div class="w-1/2">
+      <img [src]="srcimageviow" alt="" class="w-full">
     </div>
   </div>
+
 </div>
